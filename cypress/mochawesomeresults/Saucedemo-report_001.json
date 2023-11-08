@@ -1,0 +1,127 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-11-08T08:22:26.635Z",
+    "end": "2023-11-08T08:22:59.643Z",
+    "duration": 33008,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ac377a2f-02e5-441c-9b86-a971292c4dcc",
+      "title": "",
+      "fullFile": "cypress\\e2e\\login.cy.js",
+      "file": "cypress\\e2e\\login.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c6e99f62-69cd-4454-9641-765a48466a8a",
+          "title": "Login Page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login as Valid Username",
+              "fullTitle": "Login Page Login as Valid Username",
+              "timedOut": null,
+              "duration": 16937,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.xpath(\"//input[@id='user-name']\").type(\"standard_user\");\ncy.wait(3000);\ncy.xpath(\"//input[@id='password']\").type(\"secret_sauce\");\ncy.wait(3000);\ncy.xpath(\"//input[@id='login-button']\").click();\ncy.contains(\"Products\").should('be.visible');\ncy.screenshot();\ncy.wait(5000);",
+              "err": {},
+              "uuid": "ad154ba9-34a4-46c2-b24f-d6fe1dc7e6ba",
+              "parentUUID": "c6e99f62-69cd-4454-9641-765a48466a8a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Login as Invalid Username",
+              "fullTitle": "Login Page Login as Invalid Username",
+              "timedOut": null,
+              "duration": 15999,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.xpath(\"//input[@id='user-name']\").type(\"standard_user1\");\ncy.wait(3000);\ncy.xpath(\"//input[@id='password']\").type(\"secret_sauce\");\ncy.wait(3000);\ncy.xpath(\"//input[@id='login-button']\").click();\ncy.xpath(\"//h3[contains(text(),'Epic sadface: Username and password do not match a')]\").should('have.text', \"Epic sadface: Username and password do not match any user in this service\");\ncy.screenshot();\ncy.wait(5000);",
+              "err": {},
+              "uuid": "06c7e5bb-8f83-41da-8e9f-c740ad29cd90",
+              "parentUUID": "c6e99f62-69cd-4454-9641-765a48466a8a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ad154ba9-34a4-46c2-b24f-d6fe1dc7e6ba",
+            "06c7e5bb-8f83-41da-8e9f-c740ad29cd90"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 32936,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "Saucedemo-report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/mochawesomeresults",
+        "reportFilename": "Saucedemo-report",
+        "reportPageTitle": "Cypress-Web-Saucedemo",
+        "screenshotOnRunFailure": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
