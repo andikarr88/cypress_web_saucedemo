@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2023-11-09T02:57:31.066Z",
-    "end": "2023-11-09T02:57:59.070Z",
-    "duration": 28004,
+    "start": "2023-11-09T07:28:09.730Z",
+    "end": "2023-11-09T07:28:34.688Z",
+    "duration": 24958,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "3b4aadcb-41cd-4b8a-90cf-14da533bbe26",
+      "uuid": "4d336699-3594-4b3e-9d2b-8bb28b201de3",
       "title": "",
       "fullFile": "cypress\\e2e\\sorting.cy.js",
       "file": "cypress\\e2e\\sorting.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "a64da476-e390-4d9f-b0c8-5865fe74f0c4",
+          "uuid": "423ed7fc-f4f4-474c-84b1-789f4171b823",
           "title": "Sorting in Home Page",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Choose Price (low to high)",
               "fullTitle": "Sorting in Home Page Choose Price (low to high)",
               "timedOut": null,
-              "duration": 27897,
+              "duration": 24930,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": "\"assets/sorting.cy.js/Sorting in Home Page -- Choose Price (low to high).png\"",
               "code": "cy.xpath(\"//select[@class='product_sort_container']\").select(\"lohi\");\ncy.wait(3000);\ncy.xpath(\"//div[@class='inventory_list']//div[1]//div[2]//div[2]//div[1]\").should('have.text', \"$7.99\");\ncy.screenshot();\ncy.wait(5000);",
               "err": {},
-              "uuid": "ecf32977-e81d-458e-8742-ac7dc6eaa487",
-              "parentUUID": "a64da476-e390-4d9f-b0c8-5865fe74f0c4",
+              "uuid": "81e5c24a-5972-4017-9bf7-60f22997b1f6",
+              "parentUUID": "423ed7fc-f4f4-474c-84b1-789f4171b823",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "ecf32977-e81d-458e-8742-ac7dc6eaa487"
+            "81e5c24a-5972-4017-9bf7-60f22997b1f6"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 27897,
+          "duration": 24930,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -97,7 +97,6 @@
         "reportDir": "cypress/mochawesomeresults",
         "reportFilename": "Saucedemo-report",
         "reportPageTitle": "Cypress-Web-Saucedemo",
-        "screenshotOnRunFailure": true,
         "overwrite": false,
         "html": true,
         "json": true

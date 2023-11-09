@@ -15,7 +15,6 @@ module.exports = defineConfig({
       reportDir:'cypress/mochawesomeresults',
       reportFilename: 'Saucedemo-report',
       reportPageTitle: 'Cypress-Web-Saucedemo',
-      screenshotOnRunFailure: true,
       overwrite: false,
       html: true,
       json: true

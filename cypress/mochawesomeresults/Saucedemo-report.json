@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2023-11-09T02:55:46.120Z",
-    "end": "2023-11-09T02:56:17.143Z",
-    "duration": 31023,
+    "start": "2023-11-09T07:26:35.932Z",
+    "end": "2023-11-09T07:27:04.683Z",
+    "duration": 28751,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "a7961fdf-ecae-4b17-ba41-b57675529516",
+      "uuid": "c15c7528-9417-40f5-9126-776c38053995",
       "title": "",
       "fullFile": "cypress\\e2e\\addtocart.cy.js",
       "file": "cypress\\e2e\\addtocart.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "53826d6c-525a-4c42-9be3-c5cc29812cda",
+          "uuid": "e7ae07bc-07de-41cb-9be3-c571d761d986",
           "title": "Add To Cart Product",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Adding Product to Cart",
               "fullTitle": "Add To Cart Product Adding Product to Cart",
               "timedOut": null,
-              "duration": 30940,
+              "duration": 28714,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": "\"assets/addtocart.cy.js/Add To Cart Product -- Adding Product to Cart.png\"",
               "code": "cy.xpath(\"//button[@id='add-to-cart-sauce-labs-backpack']\").click();\ncy.wait(3000);\ncy.xpath(\"//a[@class='shopping_cart_link']\").click();\ncy.wait(3000);\ncy.xpath(\"//div[@class='inventory_item_name']\").should('have.text', \"Sauce Labs Backpack\");\ncy.screenshot();\ncy.wait(5000);",
               "err": {},
-              "uuid": "3d2251f9-5b51-4df7-93f6-71ccd8de29e8",
-              "parentUUID": "53826d6c-525a-4c42-9be3-c5cc29812cda",
+              "uuid": "374b4a6d-2a61-4440-bbcc-211b8f90c5d8",
+              "parentUUID": "e7ae07bc-07de-41cb-9be3-c571d761d986",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "3d2251f9-5b51-4df7-93f6-71ccd8de29e8"
+            "374b4a6d-2a61-4440-bbcc-211b8f90c5d8"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 30940,
+          "duration": 28714,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -97,7 +97,6 @@
         "reportDir": "cypress/mochawesomeresults",
         "reportFilename": "Saucedemo-report",
         "reportPageTitle": "Cypress-Web-Saucedemo",
-        "screenshotOnRunFailure": true,
         "overwrite": false,
         "html": true,
         "json": true

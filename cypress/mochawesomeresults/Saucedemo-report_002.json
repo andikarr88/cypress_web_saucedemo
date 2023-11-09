@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2023-11-09T02:56:59.896Z",
-    "end": "2023-11-09T02:57:26.855Z",
-    "duration": 26959,
+    "start": "2023-11-09T07:27:42.518Z",
+    "end": "2023-11-09T07:28:07.055Z",
+    "duration": 24537,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "fc30d0c6-c394-4635-99d4-5cd090465446",
+      "uuid": "5c0d2515-e8b5-4f10-8f5a-a94ce36e49a9",
       "title": "",
       "fullFile": "cypress\\e2e\\product_detail.cy.js",
       "file": "cypress\\e2e\\product_detail.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "699d9cdf-8810-4782-aea6-672f0fd3cc1a",
+          "uuid": "d77e477f-79f4-459c-9372-620a92d581c9",
           "title": "Product Detail",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Show Product Detail",
               "fullTitle": "Product Detail Show Product Detail",
               "timedOut": null,
-              "duration": 26845,
+              "duration": 24499,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": "\"assets/product_detail.cy.js/Product Detail -- Show Product Detail.png\"",
               "code": "cy.xpath(\"//div[normalize-space()='Sauce Labs Backpack']\").click();\ncy.wait(3000);\ncy.xpath(\"//div[@class='inventory_details_name large_size']\").should('have.text', \"Sauce Labs Backpack\");\ncy.screenshot();\ncy.wait(5000);",
               "err": {},
-              "uuid": "6897c079-cc63-4888-a864-67155f7efe4c",
-              "parentUUID": "699d9cdf-8810-4782-aea6-672f0fd3cc1a",
+              "uuid": "ae56a5e1-be0f-4126-9d87-dfb6196514ac",
+              "parentUUID": "d77e477f-79f4-459c-9372-620a92d581c9",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "6897c079-cc63-4888-a864-67155f7efe4c"
+            "ae56a5e1-be0f-4126-9d87-dfb6196514ac"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 26845,
+          "duration": 24499,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -97,7 +97,6 @@
         "reportDir": "cypress/mochawesomeresults",
         "reportFilename": "Saucedemo-report",
         "reportPageTitle": "Cypress-Web-Saucedemo",
-        "screenshotOnRunFailure": true,
         "overwrite": false,
         "html": true,
         "json": true
