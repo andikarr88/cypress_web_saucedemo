@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2023-11-08T08:23:30.231Z",
-    "end": "2023-11-08T08:23:55.724Z",
-    "duration": 25493,
+    "start": "2023-11-09T02:57:31.066Z",
+    "end": "2023-11-09T02:57:59.070Z",
+    "duration": 28004,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "97b7d6e9-5ed2-4687-abdb-4af87599560c",
+      "uuid": "3b4aadcb-41cd-4b8a-90cf-14da533bbe26",
       "title": "",
       "fullFile": "cypress\\e2e\\sorting.cy.js",
       "file": "cypress\\e2e\\sorting.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "70db6a14-7ce4-4eb7-9b7c-9738f1f4bd87",
+          "uuid": "a64da476-e390-4d9f-b0c8-5865fe74f0c4",
           "title": "Sorting in Home Page",
           "fullFile": "",
           "file": "",
@@ -38,29 +38,29 @@
               "title": "Choose Price (low to high)",
               "fullTitle": "Sorting in Home Page Choose Price (low to high)",
               "timedOut": null,
-              "duration": 25410,
+              "duration": 27897,
               "state": "passed",
               "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
-              "context": null,
+              "context": "\"assets/sorting.cy.js/Sorting in Home Page -- Choose Price (low to high).png\"",
               "code": "cy.xpath(\"//select[@class='product_sort_container']\").select(\"lohi\");\ncy.wait(3000);\ncy.xpath(\"//div[@class='inventory_list']//div[1]//div[2]//div[2]//div[1]\").should('have.text', \"$7.99\");\ncy.screenshot();\ncy.wait(5000);",
               "err": {},
-              "uuid": "e10b5954-d472-4f56-ae1e-1b6a1c36c7a7",
-              "parentUUID": "70db6a14-7ce4-4eb7-9b7c-9738f1f4bd87",
+              "uuid": "ecf32977-e81d-458e-8742-ac7dc6eaa487",
+              "parentUUID": "a64da476-e390-4d9f-b0c8-5865fe74f0c4",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "e10b5954-d472-4f56-ae1e-1b6a1c36c7a7"
+            "ecf32977-e81d-458e-8742-ac7dc6eaa487"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 25410,
+          "duration": 27897,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

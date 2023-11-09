@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2023-11-08T08:23:02.679Z",
-    "end": "2023-11-08T08:23:27.419Z",
-    "duration": 24740,
+    "start": "2023-11-09T02:56:59.896Z",
+    "end": "2023-11-09T02:57:26.855Z",
+    "duration": 26959,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "461bf541-3472-415b-9fd8-b17e75c19bab",
+      "uuid": "fc30d0c6-c394-4635-99d4-5cd090465446",
       "title": "",
       "fullFile": "cypress\\e2e\\product_detail.cy.js",
       "file": "cypress\\e2e\\product_detail.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "1cfd437e-299a-4a0b-befa-ab1e6c9a6be2",
+          "uuid": "699d9cdf-8810-4782-aea6-672f0fd3cc1a",
           "title": "Product Detail",
           "fullFile": "",
           "file": "",
@@ -38,29 +38,29 @@
               "title": "Show Product Detail",
               "fullTitle": "Product Detail Show Product Detail",
               "timedOut": null,
-              "duration": 24708,
+              "duration": 26845,
               "state": "passed",
               "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
-              "context": null,
+              "context": "\"assets/product_detail.cy.js/Product Detail -- Show Product Detail.png\"",
               "code": "cy.xpath(\"//div[normalize-space()='Sauce Labs Backpack']\").click();\ncy.wait(3000);\ncy.xpath(\"//div[@class='inventory_details_name large_size']\").should('have.text', \"Sauce Labs Backpack\");\ncy.screenshot();\ncy.wait(5000);",
               "err": {},
-              "uuid": "a62c4a0f-ac65-4a04-98fb-ff47273da3a3",
-              "parentUUID": "1cfd437e-299a-4a0b-befa-ab1e6c9a6be2",
+              "uuid": "6897c079-cc63-4888-a864-67155f7efe4c",
+              "parentUUID": "699d9cdf-8810-4782-aea6-672f0fd3cc1a",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "a62c4a0f-ac65-4a04-98fb-ff47273da3a3"
+            "6897c079-cc63-4888-a864-67155f7efe4c"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 24708,
+          "duration": 26845,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
