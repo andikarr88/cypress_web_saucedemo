@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2023-11-09T07:28:09.730Z",
-    "end": "2023-11-09T07:28:34.688Z",
-    "duration": 24958,
+    "start": "2023-11-09T09:46:07.402Z",
+    "end": "2023-11-09T09:46:32.424Z",
+    "duration": 25022,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "4d336699-3594-4b3e-9d2b-8bb28b201de3",
+      "uuid": "4d3a117f-e1ab-459a-840e-94f1d225c5cc",
       "title": "",
       "fullFile": "cypress\\e2e\\sorting.cy.js",
       "file": "cypress\\e2e\\sorting.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "423ed7fc-f4f4-474c-84b1-789f4171b823",
+          "uuid": "b11a2fcd-0393-4b5b-875e-a4c1ce8f6361",
           "title": "Sorting in Home Page",
           "fullFile": "",
           "file": "",
@@ -38,29 +38,29 @@
               "title": "Choose Price (low to high)",
               "fullTitle": "Sorting in Home Page Choose Price (low to high)",
               "timedOut": null,
-              "duration": 24930,
+              "duration": 24998,
               "state": "passed",
               "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
-              "context": "\"assets/sorting.cy.js/Sorting in Home Page -- Choose Price (low to high).png\"",
+              "context": "[\n  \"assets/images/sorting.cy.js/Sorting in Home Page -- Choose Price (low to high).png\",\n  \"assets/videos/sorting.cy.js.mp4\"\n]",
               "code": "cy.xpath(\"//select[@class='product_sort_container']\").select(\"lohi\");\ncy.wait(3000);\ncy.xpath(\"//div[@class='inventory_list']//div[1]//div[2]//div[2]//div[1]\").should('have.text', \"$7.99\");\ncy.screenshot();\ncy.wait(5000);",
               "err": {},
-              "uuid": "81e5c24a-5972-4017-9bf7-60f22997b1f6",
-              "parentUUID": "423ed7fc-f4f4-474c-84b1-789f4171b823",
+              "uuid": "ba5c5d1a-6358-4840-95da-9a686140558c",
+              "parentUUID": "b11a2fcd-0393-4b5b-875e-a4c1ce8f6361",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "81e5c24a-5972-4017-9bf7-60f22997b1f6"
+            "ba5c5d1a-6358-4840-95da-9a686140558c"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 24930,
+          "duration": 24998,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

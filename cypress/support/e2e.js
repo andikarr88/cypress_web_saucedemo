@@ -22,10 +22,14 @@ import addContext from "mochawesome/addContext";
 
 Cypress.on("test:after:run", (test, runnable) => {  
     if (test.state === "passed") {    
-      const screenshot =`assets/${Cypress.spec.name}/${runnable.parent.title} -- ${test.title}.png`;    
-      addContext({ test }, screenshot);  
+      const screenshot =`assets/images/${Cypress.spec.name}/${runnable.parent.title} -- ${test.title}.png`;    
+      addContext({ test }, screenshot); 
+      const videos =`assets/videos/${Cypress.spec.name}.mp4`;    
+      addContext({ test }, videos);  
     } else if (test.state === "failed") {    
-      const screenshot =`assets/${Cypress.spec.name}/${runnable.parent.title} -- ${test.title} (failed).png`;    
+      const screenshot =`assets/images/${Cypress.spec.name}/${runnable.parent.title} -- ${test.title} (failed).png`;    
       addContext({ test }, screenshot);
+      const videos =`assets/videos/${Cypress.spec.name}.mp4`;    
+      addContext({ test }, videos);
     }
   });

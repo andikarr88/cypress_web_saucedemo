@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2023-11-09T07:27:42.518Z",
-    "end": "2023-11-09T07:28:07.055Z",
-    "duration": 24537,
+    "start": "2023-11-09T09:45:40.082Z",
+    "end": "2023-11-09T09:46:04.744Z",
+    "duration": 24662,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "5c0d2515-e8b5-4f10-8f5a-a94ce36e49a9",
+      "uuid": "a618e216-834b-4d99-9aac-115a21fcab4a",
       "title": "",
       "fullFile": "cypress\\e2e\\product_detail.cy.js",
       "file": "cypress\\e2e\\product_detail.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "d77e477f-79f4-459c-9372-620a92d581c9",
+          "uuid": "74e89e7a-37f4-4363-b13b-aab9803f126f",
           "title": "Product Detail",
           "fullFile": "",
           "file": "",
@@ -38,29 +38,29 @@
               "title": "Show Product Detail",
               "fullTitle": "Product Detail Show Product Detail",
               "timedOut": null,
-              "duration": 24499,
+              "duration": 24637,
               "state": "passed",
               "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
-              "context": "\"assets/product_detail.cy.js/Product Detail -- Show Product Detail.png\"",
+              "context": "[\n  \"assets/images/product_detail.cy.js/Product Detail -- Show Product Detail.png\",\n  \"assets/videos/product_detail.cy.js.mp4\"\n]",
               "code": "cy.xpath(\"//div[normalize-space()='Sauce Labs Backpack']\").click();\ncy.wait(3000);\ncy.xpath(\"//div[@class='inventory_details_name large_size']\").should('have.text', \"Sauce Labs Backpack\");\ncy.screenshot();\ncy.wait(5000);",
               "err": {},
-              "uuid": "ae56a5e1-be0f-4126-9d87-dfb6196514ac",
-              "parentUUID": "d77e477f-79f4-459c-9372-620a92d581c9",
+              "uuid": "1be5bdca-f757-4942-b6ee-899352c09135",
+              "parentUUID": "74e89e7a-37f4-4363-b13b-aab9803f126f",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "ae56a5e1-be0f-4126-9d87-dfb6196514ac"
+            "1be5bdca-f757-4942-b6ee-899352c09135"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 24499,
+          "duration": 24637,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
